@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="apierror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dtls-bio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dtls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="janus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="record.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtcp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sctp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="turnrest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_audiobridge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_echotest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_recordplay.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_sip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_streaming.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_textroom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_videocall.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_videoroom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\janus_voicemail.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocessing\janus-pp-rec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocessing\pp-g711.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocessing\pp-h264.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocessing\pp-opus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocessing\pp-srt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocessing\pp-webm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\janus_http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\janus_pfunix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\janus_rabbitmq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\janus_websockets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apierror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dtls-bio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dtls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="janus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mach_gettime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sctp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="turnrest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-g711.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-h264.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-opus-silence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-opus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-rtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-srt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocessing\pp-webm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transports\transport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\footer.html" />
+    <None Include="docs\header.html" />
+    <None Include="html\admin.html" />
+    <None Include="html\audiobridgetest.html" />
+    <None Include="html\citeus.html" />
+    <None Include="html\demos.html" />
+    <None Include="html\devicetest.html" />
+    <None Include="html\echotest.html" />
+    <None Include="html\footer.html" />
+    <None Include="html\index.html" />
+    <None Include="html\navbar.html" />
+    <None Include="html\recordplaytest.html" />
+    <None Include="html\screensharingtest.html" />
+    <None Include="html\siptest.html" />
+    <None Include="html\streamingtest.html" />
+    <None Include="html\support.html" />
+    <None Include="html\textroomtest.html" />
+    <None Include="html\videocalltest.html" />
+    <None Include="html\videoroomtest.html" />
+    <None Include="html\voicemailtest.html" />
+    <None Include="html\docs\index.html" />
+  </ItemGroup>
+</Project>

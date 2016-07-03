@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="apierror.c" />
+    <ClCompile Include="auth.c" />
+    <ClCompile Include="config.c" />
+    <ClCompile Include="dtls-bio.c" />
+    <ClCompile Include="dtls.c" />
+    <ClCompile Include="ice.c" />
+    <ClCompile Include="janus.c" />
+    <ClCompile Include="log.c" />
+    <ClCompile Include="plugins\janus_audiobridge.c" />
+    <ClCompile Include="plugins\janus_echotest.c" />
+    <ClCompile Include="plugins\janus_recordplay.c" />
+    <ClCompile Include="plugins\janus_sip.c" />
+    <ClCompile Include="plugins\janus_streaming.c" />
+    <ClCompile Include="plugins\janus_textroom.c" />
+    <ClCompile Include="plugins\janus_videocall.c" />
+    <ClCompile Include="plugins\janus_videoroom.c" />
+    <ClCompile Include="plugins\janus_voicemail.c" />
+    <ClCompile Include="plugins\plugin.c" />
+    <ClCompile Include="postprocessing\janus-pp-rec.c" />
+    <ClCompile Include="postprocessing\pp-g711.c" />
+    <ClCompile Include="postprocessing\pp-h264.c" />
+    <ClCompile Include="postprocessing\pp-opus.c" />
+    <ClCompile Include="postprocessing\pp-srt.c" />
+    <ClCompile Include="postprocessing\pp-webm.c" />
+    <ClCompile Include="record.c" />
+    <ClCompile Include="rtcp.c" />
+    <ClCompile Include="sctp.c" />
+    <ClCompile Include="sdp.c" />
+    <ClCompile Include="transports\janus_http.c" />
+    <ClCompile Include="transports\janus_pfunix.c" />
+    <ClCompile Include="transports\janus_rabbitmq.c" />
+    <ClCompile Include="transports\janus_websockets.c" />
+    <ClCompile Include="turnrest.c" />
+    <ClCompile Include="utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apierror.h" />
+    <ClInclude Include="auth.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="dtls-bio.h" />
+    <ClInclude Include="dtls.h" />
+    <ClInclude Include="ice.h" />
+    <ClInclude Include="janus.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="mach_gettime.h" />
+    <ClInclude Include="mutex.h" />
+    <ClInclude Include="plugins\plugin.h" />
+    <ClInclude Include="postprocessing\pp-g711.h" />
+    <ClInclude Include="postprocessing\pp-h264.h" />
+    <ClInclude Include="postprocessing\pp-opus-silence.h" />
+    <ClInclude Include="postprocessing\pp-opus.h" />
+    <ClInclude Include="postprocessing\pp-rtp.h" />
+    <ClInclude Include="postprocessing\pp-srt.h" />
+    <ClInclude Include="postprocessing\pp-webm.h" />
+    <ClInclude Include="record.h" />
+    <ClInclude Include="rtcp.h" />
+    <ClInclude Include="rtp.h" />
+    <ClInclude Include="sctp.h" />
+    <ClInclude Include="sdp.h" />
+    <ClInclude Include="transports\transport.h" />
+    <ClInclude Include="turnrest.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\footer.html" />
+    <None Include="docs\header.html" />
+    <None Include="html\admin.html" />
+    <None Include="html\audiobridgetest.html" />
+    <None Include="html\citeus.html" />
+    <None Include="html\demos.html" />
+    <None Include="html\devicetest.html" />
+    <None Include="html\docs\index.html" />
+    <None Include="html\echotest.html" />
+    <None Include="html\footer.html" />
+    <None Include="html\index.html" />
+    <None Include="html\navbar.html" />
+    <None Include="html\recordplaytest.html" />
+    <None Include="html\screensharingtest.html" />
+    <None Include="html\siptest.html" />
+    <None Include="html\streamingtest.html" />
+    <None Include="html\support.html" />
+    <None Include="html\textroomtest.html" />
+    <None Include="html\videocalltest.html" />
+    <None Include="html\videoroomtest.html" />
+    <None Include="html\voicemailtest.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
